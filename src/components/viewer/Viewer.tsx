@@ -1,51 +1,39 @@
-import { Carousel } from "antd";
+import { Carousel, notification } from "antd";
 import { RightCircleOutlined, LeftCircleOutlined } from "@ant-design/icons";
 import "./Viewer.css";
-import { CustomImageInterface } from "../../utils/imagery";
+import { CustomImageInterface } from "../../utils/gallery";
 import { getImageHeight } from "../../utils/hooks/helpers";
-import { useRef, RefObject } from "react";
+// import { useRef, RefObject } from "react";
 import ImageSingle from "../ImageSingle";
 
 interface ViewerProps {
 	localDimensions: { width: number; height: number };
 	image: CustomImageInterface;
+	openInfoBox(imgName:string, imgAlt:string):void;
+
 }
-const Viewer = ({ localDimensions, image }: ViewerProps) => {
-    const ref= useRef(image.name); //need to fix current ref as it points at just one carousel
+const Viewer = ({ localDimensions, image, openInfoBox }: ViewerProps) => {
+	
+
+    // const ref= useRef(image.name); //need to fix current ref as it points at just one carousel
 	const onChange = (currentSlide: number) => {
         console.log('yooo')
 		console.log(currentSlide);
 	};
-    // const goBack=()=>{
-    //     //not great but
-    //     if (image.numSlides)
-    //     ref.current!.prev();
-    // }
-    // const goFwd=()=>{
-    //     //not great but
-    //     ref.current!.next();
-    // }
+    
 
 	return (
 		<div key={image.name} className="viewer-container">
-            {/* <div className="view-control-container">
-						<span
+            <div className="view-control-container"> 
+						<button
 							type="button"
-                            onClick={goBack}
-							aria-label="shift image left"
-							className="view-control"
-						>
-							<LeftCircleOutlined />
-						</span>
-						<span
-							type="button"
-                            onClick={goFwd}
+                            onClick={()=>openInfoBox(image.name, image.altText)}
 							aria-label="shift image right"
-							className="view-control"
+							className="view-control viewer-btn"
 						>
-							<RightCircleOutlined />
-						</span>
-					</div> */}
+							Information
+						</button>
+					</div> 
 			<Carousel
                 // ref={ref}
 				afterChange={onChange}

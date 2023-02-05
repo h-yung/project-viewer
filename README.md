@@ -2,7 +2,7 @@
 
 A simple gallery for full-screen viewing of panoramic(?) photos, photos not included. 
 - Password protection via **pagecrypt** can be configured from the package script.
-- Gallery "model"/schema/interface provided. In general, even if your images are not in a consistent ratio, you can experiment with customizing each one to best serve your needs (thus it's not hardcoded as part of the Viewer mapping).
+- Gallery "model"/schema/interface provided. In general, even if your images are not in a consistent ratio, you can experiment with customizing the ratio and number of slides to best serve your needs (thus it's not hardcoded as part of the Viewer mapping).
 
 _Example single-view (cropped a little tight at the top)_
 ![project_viewer](https://user-images.githubusercontent.com/102257735/216846785-a0a3832a-19ae-44c9-aa7f-16082edc30fe.png)

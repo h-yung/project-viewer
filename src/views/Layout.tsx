@@ -1,5 +1,5 @@
 import Viewer from "./../components/viewer/Viewer";
-import { gallery } from "../utils/imagery";
+import { gallery } from "../utils/gallery";
 import "./Layout.css";
 
 interface LayoutProps {

@@ -3,15 +3,20 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import AppLayout from './views/Layout';
 import { Col, Row } from 'antd';
+import { useMemo } from 'react';
+import { useDimensions } from './utils/hooks/useDimensions';
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const { localDimensions } = useDimensions();
+
+  console.log(localDimensions.width)
   return (
-    <div className="App">
+    <div className="App" style={{width: localDimensions.width, height: localDimensions.height}}>
       <Row>
         <Col span={24}>
-        <AppLayout />
+        <AppLayout localDimensions={localDimensions} />
 
         </Col>
       </Row>

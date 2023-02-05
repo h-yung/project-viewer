@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "encrypt": "pagecrypt dist/index.html dist/encrypted.html YOURPASSWORDHERE-DONOTSHARE",
+    "encrypt": "pagecrypt dist/index.html dist/encrypted.html YOURPASSWORD-DONOTSHARE",
     "test": "vitest",
     "build:dev": "vite build --mode development",
     "lint": "eslint src/*",

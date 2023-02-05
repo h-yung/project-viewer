@@ -19,6 +19,8 @@ dist-ssr
 #pers
 src/assets
 src/utils/gallery.ts
+public/
+
 
 # Editor directories and files
 .vscode/*

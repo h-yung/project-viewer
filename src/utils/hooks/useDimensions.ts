@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 
+interface SideSpansInterface {
+	colSpanSide: number;
+	colSpanMain: number;
+	padding: number | string;
+}
+
 export const useDimensions = () => {
 	const [appDimensions, setAppDimensions] = useState({
 		width: document.body.clientWidth,
 		height: document.body.clientHeight,
 	});
 	//below for antd grid
-	const [sideSpans, setSideSpans] = useState(
+	const [sideSpans, setSideSpans] = useState<SideSpansInterface>(
 		document.body.clientWidth >= 1074
 			? { colSpanSide: 6, colSpanMain: 18, padding: 0 }
 			: {

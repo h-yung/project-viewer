@@ -20,7 +20,7 @@ function App() {
 
         </Col>
       </Row>
-      <h1>Heading1</h1>
+      <h1>Views and such</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

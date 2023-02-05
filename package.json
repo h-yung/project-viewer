@@ -30,6 +30,7 @@
     "@vitejs/plugin-react-swc": "^3.0.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",

@@ -1,19 +1,20 @@
 import { Carousel } from "antd";
 import "./Viewer.css";
-import { gallery } from "../../utils/imagery";
+import { CustomImageInterface } from "../../utils/imagery";
 import { getImageHeight } from "../../utils/hooks/helpers";
 import { useMemo, useEffect } from "react";
 import ImageSingle from "../ImageSingle";
 
 interface ViewerProps {
 	localDimensions: { width: number; height: number };
+    image: CustomImageInterface;
 }
-const Viewer = ({ localDimensions }: ViewerProps) => {
+const Viewer = ({ localDimensions, image }: ViewerProps) => {
 	const onChange = (currentSlide: number) => {
 		console.log(currentSlide);
 	};
 
-	return gallery.map((image) => (
+	return (
 		<div key={image.name} className="viewer-container">
 			<Carousel
 				afterChange={onChange}
@@ -43,7 +44,7 @@ const Viewer = ({ localDimensions }: ViewerProps) => {
 				})}
 			</Carousel>
 		</div>
-	));
+    )
 };
 
 export default Viewer;

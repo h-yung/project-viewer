@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 interface ImageSingleProps{
     src:string; refWidth:number; widthHeightRatio: number;altText: string
 }
+
 const ImageSingle = ({src, refWidth, widthHeightRatio, altText}:ImageSingleProps)=>{
 
     const imgHeight = useMemo(()=> {

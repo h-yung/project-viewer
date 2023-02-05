@@ -16,7 +16,7 @@ Thematically similar to windowswap but more recent inspo from Liberty London's /
 - More click throughs to new places, which may eventually require React Router.
 
 ### Dev notes
-- Typescript + React + Ant Design + pagecrypt
+- Typescript + React + Ant Design + pagecrypt. Built with Vite's react-ts template.
 -   Original creds: [Password protection for static sites](https://medium.com/@j0hnm4r5/password-protecting-a-website-with-the-free-tier-of-netlify-and-publishing-with-a-single-npm-e509af9f108f). For some reason, Staticrypt wasn't working for me. Pagecrypt was a breeze though and could be very useful for short demos.
 
 Why...

@@ -1,29 +1,51 @@
 .viewer-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
 }
 
 .content-text {
-    margin: 0;
-    height: 160px;
-    color: #fff;
-    line-height: 160px;
-    text-align: center;
-    /* background: #364d79; */
+	margin: 0;
+	height: 160px;
+	color: #fff;
+	line-height: 160px;
+	text-align: center;
+	/* background: #364d79; */
+}
+
+.view-control-container {
+	margin: 2rem;
+	position: fixed;
+	top: 50%;
+	z-index: 2;
+	height: 100%;
+	width: 96vw;
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+.view-control {
+	font-size: 4rem;
+	color: white;
+	opacity: 0.4;
+	background: transparent;
+}
+.view-control:hover {
+	cursor: pointer;
 }
 
 .img-container {
-    width: 100%;
+	width: 100%;
 }
 .img-p1 {
-    /* object-position: 0% 0%; */
-    object-fit: fill;
+	/* object-position: 0% 0%; */
+	object-fit: fill;
 }
 .img-p2 {
-    object-position: 50% 0%;
+	object-position: 50% 0%;
 }
 
 .viewer {
-    border: px solid red;
-    overflow-x: hidden;
+	border: px solid red;
+	overflow-x: hidden;
 }

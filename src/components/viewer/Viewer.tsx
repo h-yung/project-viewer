@@ -16,15 +16,15 @@ const Viewer = ({ localDimensions, image }: ViewerProps) => {
         console.log('yooo')
 		console.log(currentSlide);
 	};
-    const goBack=()=>{
-        //not great but
-        if (image.numSlides)
-        ref.current!.prev();
-    }
-    const goFwd=()=>{
-        //not great but
-        ref.current!.next();
-    }
+    // const goBack=()=>{
+    //     //not great but
+    //     if (image.numSlides)
+    //     ref.current!.prev();
+    // }
+    // const goFwd=()=>{
+    //     //not great but
+    //     ref.current!.next();
+    // }
 
 	return (
 		<div key={image.name} className="viewer-container">

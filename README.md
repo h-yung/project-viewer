@@ -1,9 +1,10 @@
 # project-viewer
 
-A gallery for full-screen viewing of panoramic(?) photos, photos not included.
+A gallery for full-screen viewing of panoramic(?) photos, photos not included. Password protection can be configured.
+
 Further click throughs etc. TBC.
 
-Typescript + react + Ant Design + [staticrypt](https://robinmoisson.github.io/staticrypt/)
+Typescript + react + Ant Design
 
 Provides for:
 

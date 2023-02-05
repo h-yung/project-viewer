@@ -14,7 +14,7 @@ interface LayoutProps {
 const AppGallery = ({ localDimensions, openInfoBox }: LayoutProps) => {
 	return (
 		<div className="Gallery">
-			{Object.keys(gallery).map((set) => (
+			{Object.keys(gallery).map((set:keyof GalleryInterface) => (
 				<div key={set}>
 					<p id={set}>{set} | <a href="/#gallery-menu">Return to top</a></p>
 					{gallery[set].map((image: CustomImageInterface) => (
